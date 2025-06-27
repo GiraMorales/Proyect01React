@@ -3,6 +3,7 @@ import './Header.css';
 import Home from '../../Pages/Home/Home';
 import About from '../../Pages/About/About';
 import Contact from '../../Pages/Contact/Contact';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [changePage, setChangePage] = useState('Home');
@@ -12,13 +13,14 @@ const Header = () => {
       <nav>
         <ul className='buttons'>
           <li>
-            <button onClick={() => setChangePage('Home')}>Home</button>
+            <Link to='/'>Home</Link>
+            {/* <button onClick={() => setChangePage('Home')}>Home</button> */}
           </li>
           <li>
-            <button onClick={() => setChangePage('About')}>About</button>
+            <Link to='/about'>About</Link>
           </li>
           <li>
-            <button onClick={() => setChangePage('Contact')}>Contact</button>
+            <Link to='/contact'>Contact</Link>
           </li>
         </ul>
       </nav>

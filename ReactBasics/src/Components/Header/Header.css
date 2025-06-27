@@ -13,7 +13,7 @@
   margin-right: 10px;
 }
 
-.buttons li > button {
+.buttons li > a {
   background-color: #4caf50; /* Green */
   border: 2px solid #000000;
   border-radius: 15px;
@@ -26,6 +26,6 @@
   transition: all 0.3s ease;
 }
 
-.buttons li > button:hover {
+.buttons li > a:hover {
   transform: scale(1.1);
 }
